@@ -3,12 +3,15 @@
   --primary-color: #313987;
   --dark-gray: #313131;
   --light-gray: #727273;
+  --dark-blue: #20272E;
 }
 
 body {
-  background: #313131;
+  background: var(--dark-blue);
   margin: 0;
   font-family: 'Poppins';
+  font-size: .8em;
+  word-spacing: .2em;
 }
 
 .navbar {
@@ -52,11 +55,12 @@ section {
 .left-col .subhead {
   text-transform: uppercase;
   font-weight: bold;
-  color: gray;
+  color: var(--light-gray);
   letter-spacing: .3em;
 }
 
 .left-col h1 {
+  color: white;
   font-size: 2.5em;
   line-height: 1.3em;
   margin-top: .2em;
@@ -67,92 +71,32 @@ section {
   color: white;
   text-decoration: none;
   padding: .6em 1.3em;
-  font-size: 1.4em;
+  font-size: 1em;
   border-radius: 5em;
   font-weight: bold;
   display: inline-block;
 }
 
-.left-col .watch-video-cta {
-  display: block;
-  margin-top: 1em;
+section.about-us {
+  background: white;
+  color: var(--dark-blue);
 }
 
-.left-col .watch-video-cta img {
-  margin-right: .5em;
-}
-
-.hero-img {
-  width: 70%;
-  margin-top: 3em;
-}
-
-section.features-section {
-  background: #20272E;
-  color: white;
-}
-
-ul.features-list {
-  margin: 0;
-  padding-left: .1em;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-}
-
-ul.features-list li {
-  font-size: 1.1em;
-  margin-bottom: 1em;
-  margin-left: 2em;
-  position: relative;
-}
-
-ul.features-list li:before {
-  content: '';
-  left: -2em;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-image: url("../images/bullet.svg");
-  background-size: contain;
-  margin-right: .5em;
-}
-
-.features-section img {
+.about-us img {
   display: none;
-}
-
-.testimonials-section {
-  background: var(--primary-color);
-  color: white;
-}
-
-.testimonials-section li {
-  background: #006BD6;
-  text-align: center;
-  padding: 2em 1em;
-  width: 80%;
-  margin: 0 auto 5em auto;
-  border-radius: 1em;
-}
-
-.testimonials-section li img {
-  width: 5em;
-  height: 5em;
-  border: 5px solid #006BD6;
-  border-radius: 50%;
-  margin-top: -4.5em;
 }
 
 h2 {
   font-size: 2em;
+  color: var(--primary-color);
+  text-align: center;
 }
 
 label {
   display: block;
-  font-size: 1.2em;
+  font-size: 1em;
   margin-bottom: .5em;
+  color: white;
 }
 
 input, textarea {
@@ -169,7 +113,7 @@ input[type="submit"] {
   background-color: var(--primary-color);
   color: white;
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 1em;
   border: none;
   margin-bottom: 5em;
   border-radius: 5em;
@@ -179,11 +123,6 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-iframe {
-  width: 100%;
-  height: 300px;
-}
-
 nav.menu-btn {
   display: block;
 }
@@ -191,7 +130,7 @@ nav.menu-btn {
 nav {
   position: fixed;
   z-index: 999;
-  width: 66%;
+  width: 55%;
   right: 0;
   top: 0;
   background: #20272E;
@@ -252,14 +191,15 @@ nav li a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 1em;
   }
   .navbar nav a {
-    color: black;
+    color: white;
     font-size: 1em;
     padding: .1em 1em;
   }
   .navbar nav ul.primary-nav {
-    margin: 0;
+    margin: 1em;
   }
   .navbar nav li.current a {
     font-weight: bold;
@@ -324,15 +264,15 @@ nav li a:hover {
     width: 30px;
     height: 30px;
   }
-  .features-section {
+  .about-us {
     position: relative;
   }
-  .features-section img {
+  .about-us img {
     display: block;
     position: absolute;
     right: 0;
-    width: 350px;
-    bottom: -2em;
+    width: 500px;
+    bottom: -18em;
   }
   .testimonials-section ul {
     display: -webkit-box;

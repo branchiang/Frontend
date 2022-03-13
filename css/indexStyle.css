@@ -1,28 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 :root {
-  --primary-color: #007AF3;
+  --primary-color: #313987;
+  --dark-gray: #313131;
+  --light-gray: #727273;
 }
 
 body {
-  background: #F2F2F2;
+  background: #313131;
   margin: 0;
   font-family: 'Poppins';
 }
 
 .navbar {
-  background: white;
+  background: var(--light-gray);
   padding: 1em;
-}
-
-.navbar .logo {
-  text-decoration: none;
-  font-weight: bold;
-  color: black;
-  font-size: 1.2em;
-}
-
-.navbar .logo span {
-  color: var(--primary-color);
 }
 
 .navbar nav {
@@ -391,4 +382,4 @@ nav li a:hover {
     top: 2em;
   }
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=indexStyle.css.map */

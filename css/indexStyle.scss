@@ -15,24 +15,6 @@ body {
   word-spacing: 0.2em;
 }
 
-.navbar {
-  background: var(--light-gray);
-  padding: 1em;
-
-  nav {
-    display: none;
-  }
-
-  .container {
-    display: flex;
-    place-content: space-between;
-  }
-
-  .mobile-menu {
-    cursor: pointer;
-  }
-}
-
 a {
   color: #444444;
 }
@@ -53,83 +35,25 @@ section {
   padding: 5em 2em;
 }
 
-// Hero Section
-.hero {
-  text-align: center;
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5) 50%,
-      rgba(0, 0, 0, 0.5) 50%
-    ),
-    url(../Images/golf.jpg);
-  background-size: cover;
-  background-position: top center;
-  width: auto;
-  height: 100vh;
-}
+// Navigation Menu Bar
 
-.left-col {
-  margin-top: 50%;
-  .subhead {
-    text-transform: uppercase;
-    font-weight: bold;
-    color: white;
-    letter-spacing: 0.3em;
+.navbar {
+  background: var(--light-gray);
+  padding: 1em;
+
+  nav {
+    display: none;
   }
 
-  h1 {
-    color: white;
-    font-size: 2.5em;
-    line-height: 1.3em;
-    margin-top: 0.2em;
+  .container {
+    display: flex;
+    place-content: space-between;
+  }
+
+  .mobile-menu {
+    cursor: pointer;
   }
 }
-
-// About Us Section
-section.about-us {
-  background: white;
-  color: var(--dark-blue);
-}
-
-.about-us img {
-  display: none;
-}
-
-// Contact Section
-section.contact-section {
-  margin: 3em;
-}
-
-label {
-  display: block;
-  font-size: 1em;
-  margin-bottom: 0.5em;
-  color: white;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 0.8em;
-  margin-bottom: 1em;
-  border-radius: 0.3em;
-  border: 1px solid gray;
-  box-sizing: border-box;
-}
-
-input[type="submit"] {
-  background-color: var(--primary-color);
-  color: white;
-  font-weight: bold;
-  font-size: 1em;
-  border: none;
-  margin-bottom: 5em;
-  border-radius: 5em;
-  display: inline-block;
-  padding: 0.8em 2em;
-  width: unset;
-  cursor: pointer;
-}
-
 nav.menu-btn {
   display: block;
 }
@@ -170,9 +94,90 @@ nav {
   cursor: pointer;
 }
 
+// Hero Section
+
+.hero {
+  text-align: center;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.5) 50%
+    ),
+    url(../Images/golf.jpg);
+  background-size: cover;
+  background-position: top center;
+  height: 50vh;
+}
+
+.left-col {
+  margin-top: 50%;
+  .subhead {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 0.3em;
+  }
+
+  h1 {
+    color: white;
+    font-size: 2.5em;
+    line-height: 1.3em;
+    margin-top: 0.2em;
+  }
+}
+
+// About Us Section
+
+section.about-us {
+  background: white;
+  color: var(--dark-blue);
+}
+
+.about-us img {
+  display: none;
+}
+
+// Contact Section
+
+section.contact-section {
+  margin: 3em;
+}
+
+label {
+  display: block;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  color: white;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border-radius: 0.3em;
+  border: 1px solid gray;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  border: none;
+  margin-bottom: 5em;
+  border-radius: 5em;
+  display: inline-block;
+  padding: 0.8em 2em;
+  width: unset;
+  cursor: pointer;
+}
+
 // Screen View @768px
+
 @media only screen and (min-width: 768px) {
-  // Nav menu bar
+  // Navigation Menu Bar
+
   .mobile-menu,
   .mobile-menu-exit {
     display: none;
@@ -224,9 +229,26 @@ nav {
       }
     }
   }
+
+  // Hero Section
+
+  .hero .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    .left-col {
+      margin: 3em 3em 0 5em;
+
+      h1 {
+        font-size: 3em;
+        width: 90%;
+      }
+    }
+  }
 }
 
 // Screen View @1080px
+
 @media only screen and (min-width: 1080px) {
   .container {
     width: 1080px;
@@ -235,18 +257,6 @@ nav {
 
   section {
     padding: 10em 4em;
-  }
-
-  .hero {
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.5) 50%,
-        rgba(0, 0, 0, 0.5) 50%
-      ),
-      url(../Images/golf.jpg);
-    background-size: cover;
-    background-position: top center;
-    width: 100%;
-    height: 50vh;
   }
 
   .hero .container {
@@ -263,50 +273,16 @@ nav {
     }
   }
 
-  .hero-img {
-    width: 30%;
-    margin-right: 8em;
-  }
-
-  .hero-cta {
-    display: flex;
-  }
-  .primary-cta {
-    margin-right: 1em;
-  }
-
-  ul.features-list {
-    display: block;
-    margin-left: 5em;
-
-    li {
-      font-size: 1.4em;
-
-      &:before {
-        width: 30px;
-        height: 30px;
-      }
-    }
-  }
-
   .about-us {
     position: relative;
   }
 
   .about-us img {
     display: block;
-    position: absolute;
-    right: 5em;
+    position: relative;
+    left: 55vh;
     width: 400px;
-    bottom: -15em;
-  }
-
-  .testimonials-section ul {
-    display: flex;
-
-    li {
-      margin: 0 1em;
-    }
+    bottom: -5em;
   }
 
   .contact-section {
@@ -314,42 +290,6 @@ nav {
 
     .container {
       display: flex;
-    }
-  }
-
-  .contact-right {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 45%;
-    height: 100%;
-
-    iframe {
-      height: 100%;
-    }
-  }
-}
-
-@media only screen and (min-width: 1450px) {
-  .features-section {
-    &:before {
-      content: "";
-      position: absolute;
-      width: 10%;
-      height: 20em;
-      background: var(--primary-color);
-      left: 0;
-      top: -4em;
-    }
-
-    &:after {
-      content: "";
-      position: absolute;
-      width: 200px;
-      height: 20em;
-      background: url("../images/dots.svg") no-repeat;
-      left: 4.5em;
-      top: 2em;
     }
   }
 }

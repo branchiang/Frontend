@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #313987;
+  --dark-gray: #313131;
+  --light-gray: #727273;
+  --dark-blue: #20272e;
+}
+
+body {
+  background: var(--dark-blue);
+  margin: 0;
+  font-family: "Poppins";
+  font-size: 0.8em;
+  word-spacing: 0.2em;
+}
+
+a {
+  color: #444444;
+}
+
+h2 {
+  font-size: 2em;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+// Navigation Bar
+.navbar {
+  background: var(--light-gray);
+  padding: 1em;
+
+  nav {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    place-content: space-between;
+  }
+
+  .mobile-menu {
+    cursor: pointer;
+  }
+}
+
+.result-header {
+  position: relative;
+
+  h3,
+  p {
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 150px;
+  }
+
+  .tour-icon {
+    width: 10em;
+    position: relative;
+    bottom: 50px;
+  }
+}
+
+.result-table {
+}

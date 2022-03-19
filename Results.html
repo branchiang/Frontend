@@ -2,15 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YoungAthletesAgency</title>
+    <link rel="stylesheet" href="css/resultsStyle.css">
 </head>
 <body>
-    <!--Navigation Menu Bar-->
+
+
+<!--Navigation Menu Bar-->
     <div class="navbar">
         <div class="container">
-            <a class="logo" href="#">
+            <a class="logo" href="Home.html">
                 <img class="logo-img" src="images/white label logo.png" alt="Home" width="150">
             </a>
     
@@ -20,9 +22,9 @@
                 <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
                 
                 <ul class="primary-nav">
-                    <li class="current"><a href="Home.html">Home</a></li>
+                    <li><a href="Home.html">Home</a></li>
                     <li><a href="Event.html">Event</a></li>
-                    <li><a href="Results.html">Results</a></li>
+                    <li class="current"><a href="Results.html">Results</a></li>
                 </ul>
     
                 <ul class="secondary-nav">
@@ -33,7 +35,30 @@
         </div>
     </div>
 
+<!--Result Header Section-->
+    <section class="result-header">
+        <div class="container">
+            <img class="tour-icon" src="images/image icon.png" alt="">
+            <h3>Tournament Name</h3>
+            <p>10 - 13 February 2022</p>
+        </div>
     
+    </section>
+
+<!--Results Table-->
+    <section class="result-table">
+        <h2>Leaderboard</h2>
+
+        <table>
+            <tr>
+                <th>Rank</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>School</th>
+                <th>Total</th>
+            </tr>
+        </table>
+    </section>
     
 </body>
 </html>

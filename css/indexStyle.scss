@@ -36,7 +36,6 @@ section {
 }
 
 // Navigation Menu Bar
-
 .navbar {
   background: var(--light-gray);
   padding: 1em;
@@ -95,7 +94,6 @@ nav {
 }
 
 // Hero Section
-
 .hero {
   text-align: center;
   background-image: linear-gradient(
@@ -126,7 +124,6 @@ nav {
 }
 
 // About Us Section
-
 section.about-us {
   background: white;
   color: var(--dark-blue);
@@ -137,7 +134,6 @@ section.about-us {
 }
 
 // Contact Section
-
 section.contact-section {
   margin: 3em;
 }
@@ -174,10 +170,8 @@ input[type="submit"] {
 }
 
 // Screen View @768px
-
 @media only screen and (min-width: 768px) {
   // Navigation Menu Bar
-
   .mobile-menu,
   .mobile-menu-exit {
     display: none;
@@ -231,7 +225,6 @@ input[type="submit"] {
   }
 
   // Hero Section
-
   .hero .container {
     display: flex;
     justify-content: space-between;
@@ -248,7 +241,6 @@ input[type="submit"] {
 }
 
 // Screen View @1080px
-
 @media only screen and (min-width: 1080px) {
   .container {
     width: 1080px;
@@ -259,6 +251,7 @@ input[type="submit"] {
     padding: 10em 4em;
   }
 
+  // Hero Section
   .hero .container {
     display: flex;
     justify-content: space-between;
@@ -273,6 +266,7 @@ input[type="submit"] {
     }
   }
 
+  // About Us Section
   .about-us {
     position: relative;
   }

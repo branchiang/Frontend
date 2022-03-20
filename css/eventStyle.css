@@ -1,1 +1,84 @@
-/* No CSS *//*# sourceMappingURL=eventStyle.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --primary-color: #313987;
+  --dark-gray: #313131;
+  --light-gray: #727273;
+  --dark-blue: #20272e;
+}
+
+body {
+  background: var(--dark-blue);
+  margin: 0;
+  font-family: "Poppins";
+  font-size: 0.8em;
+  word-spacing: 0.2em;
+}
+
+a {
+  color: #444444;
+}
+
+h2 {
+  font-size: 2em;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.navbar {
+  background: var(--light-gray);
+  padding: 1em;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 55%;
+  right: 0;
+  top: 0;
+  background: #20272e;
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+/*# sourceMappingURL=eventStyle.css.map */

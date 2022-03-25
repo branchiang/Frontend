@@ -107,7 +107,7 @@ nav {
 }
 
 .left-col {
-  margin-top: 50%;
+  margin-top: 20%;
   .subhead {
     text-transform: uppercase;
     font-weight: bold;
@@ -135,7 +135,21 @@ section.about-us {
 
 // Contact Section
 section.contact-section {
-  margin: 3em;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.5) 50%
+    ),
+    url(../Images/Background_image.png);
+  background-size: contain;
+  height: 100vh;
+
+  .contact-left {
+    margin: 4em;
+  }
+
+  h2 {
+    color: white;
+  }
 }
 
 label {

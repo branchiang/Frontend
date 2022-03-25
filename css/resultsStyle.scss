@@ -93,13 +93,10 @@ nav {
     color: white;
     text-align: center;
     position: relative;
-    bottom: 150px;
+    bottom: 100px;
   }
-
-  .tour-icon {
-    width: 10em;
-    position: relative;
-    bottom: 50px;
+  h3 {
+    font-size: 1.5em;
   }
 }
 
@@ -155,5 +152,17 @@ nav {
         color: white;
       }
     }
+  }
+}
+
+// Screen View @1080px
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+
+  section {
+    padding: 10em 4em;
   }
 }

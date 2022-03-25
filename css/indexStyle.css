@@ -102,7 +102,7 @@ nav li a:hover {
 }
 
 .left-col {
-  margin-top: 50%;
+  margin-top: 20%;
 }
 
 .left-col .subhead {
@@ -129,7 +129,18 @@ section.about-us {
 }
 
 section.contact-section {
-  margin: 3em;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0.5)), color-stop(50%, rgba(0, 0, 0, 0.5))), url(../Images/Background_image.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(../Images/Background_image.png);
+  background-size: contain;
+  height: 100vh;
+}
+
+section.contact-section .contact-left {
+  margin: 4em;
+}
+
+section.contact-section h2 {
+  color: white;
 }
 
 label {
